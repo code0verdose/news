@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #f7efcd;
+  font-family: "Rubik", sans-serif;
+  color: #414141;
+}
+
+.container {
+  max-width: 1208px;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: content-box;
+}
+
+.news__wrapper {
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  gap: 0 16px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 376px;
+  min-width: 200px;
+  flex-basis: 100%;
+}
+
+/* .card:not(:first-child) {
+  margin-left: 16px;
+} */
+
+.card__picture {
+  display: block;
+  width: 100%;
+  height: 162px;
+  object-fit: cover;
+  object-position: center;
+  background: #b8b8b8;
+}
+
+.card__info {
+  padding: 10px;
+  min-height: 260px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card__date {
+  color: #8f8f8f;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.card__title {
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 10px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__subtitle {
+  margin-top: 10px;
+  line-height: 24px;
+
+  flex-grow: 1;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__link {
+  line-height: 24px;
+  color: #70c05b;
+  padding: 8px;
+  background: #e5ffde;
+  max-width: 150px;
+  border-radius: 4px;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  transition: 0.2s;
+}
+
+.card__link:hover {
+  background: #70c05b;
+  color: #fff;
+}
+
+/* 1440 1280 980 768 468 375 320 */
+
+@media (max-width: 768px) {
+  .card__picture {
+    max-height: 156px;
+  }
+
+  .card__date {
+    font-size: 8px;
+    line-height: 12px;
+  }
+
+  .card__title {
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-line-clamp: 3;
+  }
+
+  .card__subtitle {
+    font-size: 12px;
+    line-height: 18px;
+    -webkit-line-clamp: 5;
+  }
+
+  .card__info {
+    min-height: 264px;
+  }
+}
+
+@media (max-width: 686px) {
+  .news__wrapper {
+    flex-direction: column;
+    gap: 20px 0;
+  }
+
+  .card {
+    min-width: 100%;
+  }
+
+  .card__picture {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 320px) {
+  .card__picture {
+    min-height: 150px;
+  }
+}

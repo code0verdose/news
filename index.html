@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section class="news">
+        <div class="container">
+          <h2>Статьи</h2>
+          <div class="news__wrapper">
+            <div class="card">
+              <!-- <img
+                src="./img/test.png"
+                alt="News - picture"
+                class="card__picture"
+                height="162"
+                width="376"
+              /> -->
+
+              <picture>
+                <source
+                  media="(max-width: 768px) and (min-width: 668px)"
+                  srcset="./img/mask-mobile.png"
+                />
+                <img
+                  src="./img/mask.png"
+                  alt="News - picture"
+                  class="card__picture"
+                  height="162"
+                  width="376"
+                />
+              </picture>
+
+              <div class="card__info">
+                <time class="card__date" datetime="05-03-2021">05.03.2021</time>
+                <h3 class="card__title">Режим использования масок</h3>
+                <p class="card__subtitle">
+                  Подробная информация о режимах использования масок и перчаток
+                  на территории магазинов "ЛЕНТА". Информация обновляется каждый
+                  будний день.
+                </p>
+                <a class="card__link" href="/">Подробнее</a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="./img/mask.png"
+                srcset="./img/mask.png 1x, ./img/mask@2x.png 2x"
+                alt="News - picture"
+                class="card__picture"
+                height="162"
+                width="376"
+              />
+              <div class="card__info">
+                <time class="card__date" datetime="05-03-2021">05.03.2021</time>
+                <h3 class="card__title">
+                  Режим использования масок и перчаток на территории магазинов
+                </h3>
+                <p class="card__subtitle">
+                  Подробная информация о режимах использования масок
+                </p>
+                <a class="card__link" href="/">Подробнее</a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="./img/mask.png"
+                srcset="./img/mask.png 1x, ./img/mask@2x.png 2x"
+                alt="News - picture"
+                class="card__picture"
+                height="162"
+                width="376"
+              />
+              <div class="card__info">
+                <time class="card__date" datetime="05-03-2021">05.03.2021</time>
+                <h3 class="card__title">
+                  Режим использования масок и перчаток на территории магазинов
+                </h3>
+                <p class="card__subtitle">
+                  Подробная информация о режимах использования масок и перчаток
+                  на территории магазинов "ЛЕНТА". Информация обновляется каждый
+                  будний день.
+                </p>
+                <a class="card__link" href="/">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
